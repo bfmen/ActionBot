@@ -20,6 +20,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "nodeversion": ">=20.19.0",
-  "author": "bigbugcc",
+  "author": "bfmen",
   "license": "MIT"
 }
