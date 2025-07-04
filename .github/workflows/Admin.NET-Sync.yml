@@ -19,7 +19,7 @@ jobs:
           sudo chown $USER:$GROUPS /workdir
 
       - name: Domain tools
-        uses: bigbugcc/cn-domain-tools@main
+        uses: bfmen/cn-domain-tools@main
 
       - name: Configure Git
         working-directory: /workdir
@@ -49,5 +49,5 @@ jobs:
           github_token: ${{ secrets.UPDATE_TOKEN }}
           directory: /workdir/Admin.NET
           branch: v2
-          repository: bigbugcc/Admin.NET
+          repository: bfmen/Admin.NET
           force: true
