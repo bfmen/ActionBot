@@ -30,7 +30,7 @@ jobs:
       - name: Clone Admin.NET
         working-directory: /workdir
         run: |
-          git clone https://github.com/bigbugcc/Admin.NET.git
+          git clone https://github.com/bfmen/Admin.NET.git
           cd Admin.NET
           git checkout v2
 
