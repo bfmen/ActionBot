@@ -12,9 +12,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      
-    - name: Domain tools
-      uses: bfmen/cn-domain-tools@main
 
     - name: AutoTrigger
       uses: bfmen/ActionBot@main
