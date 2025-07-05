@@ -25,7 +25,7 @@ jobs:
         working-directory: /workdir
         run: |
           git config --global user.name "ActionBot"
-          git config --global user.email "ibigbugcc@gamil.com"
+          git config --global user.email "900zzj@gmail.com"
 
       - name: Clone Admin.NET
         working-directory: /workdir
