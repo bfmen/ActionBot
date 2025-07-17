@@ -5,7 +5,7 @@ on:
 
 env:
   repo_url: https://github.com/MHSanaei/3x-ui.git
-  docker-repo: 'bigbugcc/3x-ui'
+  docker-repo: 'bfmen/3x-ui'
   platforms: 'linux/386,linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64'
   configure-sh: './bin/3x-ui/configure.sh'
 
@@ -91,9 +91,9 @@ jobs:
           prerelease: false
           body: | 
             Release Note:
-            - ![](https://img.shields.io/docker/pulls/bigbugcc/3x-ui.svg?style=flat-square)
+            - ![](https://img.shields.io/docker/pulls/bfmen/3x-ui.svg?style=flat-square)
             - [ DockerHub🐬 ](https://hub.docker.com/r/${{ env.docker-repo }})
-            - 🎯Use: `docker pull bigbugcc/3x-ui:latest`
+            - 🎯Use: `docker pull bfmen/3x-ui:latest`
             - 👇Or download the Docker image and import it manually
           files: | 
             ${{ steps.docker.outputs.metadata }}
