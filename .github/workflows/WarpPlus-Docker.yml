@@ -5,7 +5,7 @@ on:
 
 env:
   repo_url: 'https://github.com/bepass-org/warp-plus.git'
-  docker-repo: 'bigbugcc/warp-plus'
+  docker-repo: 'bfmen/warp-plus'
   docker-file-path: ''
   platforms: 'linux/386,linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64'
 
@@ -95,7 +95,7 @@ jobs:
           body: | 
             Release Note:
             - [ DockerHub🐬 ](https://hub.docker.com/r/${{ env.docker-repo }})
-            - 🎯Use: `docker pull bigbugcc/warp-plus:latest`
+            - 🎯Use: `docker pull bfmen/warp-plus:latest`
             - 👇Or download the Docker image and import it manually
           files: | 
             ${{ steps.docker.outputs.metadata }}
