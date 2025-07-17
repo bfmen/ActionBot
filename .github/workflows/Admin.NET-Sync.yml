@@ -19,18 +19,18 @@ jobs:
           sudo chown $USER:$GROUPS /workdir
 
       - name: Domain tools
-        uses: bigbugcc/cn-domain-tools@main
+        uses: bfmen/cn-domain-tools@main
 
       - name: Configure Git
         working-directory: /workdir
         run: |
           git config --global user.name "ActionBot"
-          git config --global user.email "ibigbugcc@gamil.com"
+          git config --global user.email "ibfmen@gamil.com"
 
       - name: Clone Admin.NET
         working-directory: /workdir
         run: |
-          git clone https://github.com/bigbugcc/Admin.NET.git
+          git clone https://github.com/bfmen/Admin.NET.git
           cd Admin.NET
           git checkout v2
 
@@ -49,5 +49,5 @@ jobs:
           github_token: ${{ secrets.UPDATE_TOKEN }}
           directory: /workdir/Admin.NET
           branch: v2
-          repository: bigbugcc/Admin.NET
+          repository: bfmen/Admin.NET
           force: true
